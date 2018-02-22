@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fkevincastro.calculadoradigital.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/green"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/limegreen"
+            android:textColor="@color/maroon"
+            android:textStyle="bold"
+            android:textSize="50sp"
+            android:layout_margin="10dp"
+            android:id="@+id/tDisplay"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+            android:background="@color/maroon">
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_margin="5dp"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="match_parent">
+
+                  <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/lime"
+                    android:textColor="@color/maroon"
+                    android:text="@string/siete"
+                    android:textSize="70sp"
+                    android:textStyle="bold"
+                    android:id="@+id/b7"
+                      android:onClick="OnNumberIsClicked"/>
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/lime"
+                    android:textColor="@color/maroon"
+                    android:text="@string/ocho"
+                    android:textSize="70sp"
+                    android:textStyle="bold"
+                    android:id="@+id/b8"
+                    android:onClick="OnNumberIsClicked"/>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/lime"
+                    android:textColor="@color/maroon"
+                    android:onClick="OnNumberIsClicked"
+                    android:textSize="70sp"
+                    android:text="@string/nueve"
+                    android:textStyle="bold"
+                    android:id="@+id/b9"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/lime"
+                    android:textColor="@color/maroon"
+                    android:text="@string/mas"
+                    android:textSize="70sp"
+                    android:textStyle="bold"
+                    android:id="@+id/bmas"
+                    android:onClick="OnOperatorIsClicked"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_margin="5dp"
+                tools:ignore="NestedWeights">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+
+                 <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                     android:onClick="OnNumberIsClicked"
+                    android:background="@color/lime"
+                    android:textColor="@color/maroon"
+                    android:text="@string/cuatro"
+                    android:textSize="70sp"
+                    android:textStyle="bold"
+                    android:id="@+id/b4"/>
+
+                 </LinearLayout>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/lime"
+                    android:textColor="@color/maroon"
+                    android:text="@string/cinco"
+                    android:onClick="OnNumberIsClicked"
+                    android:textSize="70sp"
+                    android:textStyle="bold"
+                    android:id="@+id/b5"/>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/lime"
+                    android:textColor="@color/maroon"
+                    android:text="@string/seis"
+                    android:onClick="OnNumberIsClicked"
+                    android:textSize="70sp"
+                    android:textStyle="bold"
+                    android:id="@+id/b6"/>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/lime"
+                    android:textColor="@color/maroon"
+                    android:text="@string/menos"
+                    android:textSize="70sp"
+                    android:textStyle="bold"
+                    android:id="@+id/bMenos"
+                    android:onClick="OnOperatorIsClicked"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_height="0dp"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="5dp">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/lime"
+                    android:textColor="@color/maroon"
+                    android:text="@string/tres"
+                    android:textSize="70sp"
+                    android:textStyle="bold"
+                    android:id="@+id/b3"
+                    android:onClick="OnNumberIsClicked"
+                    />
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/lime"
+                    android:textColor="@color/maroon"
+                    android:text="@string/dos"
+
+                    android:textSize="70sp"
+                    android:onClick="OnNumberIsClicked"
+                    android:textStyle="bold"
+                    android:id="@+id/b2"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/lime"
+                    android:textColor="@color/maroon"
+                    android:text="@string/uno"
+                    android:textSize="70sp"
+                    android:textStyle="bold"
+                    android:onClick="OnNumberIsClicked"
+                    android:id="@+id/b1"/>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/lime"
+                    android:textColor="@color/maroon"
+                    android:text="@string/por"
+                    android:textSize="70sp"
+                    android:textStyle="bold"
+                    android:id="@+id/bPor"
+                    android:onClick="OnOperatorIsClicked"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_margin="5dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/lime"
+                    android:textColor="@color/maroon"
+                    android:text="@string/punto"
+                    android:textSize="70sp"
+                    android:textStyle="bold"
+                    android:id="@+id/bPunto"
+                    android:onClick="OnNumberIsClicked"
+                    tools:ignore="NestedWeights" />
+                </LinearLayout>
+
+            <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/lime"
+                    android:textColor="@color/maroon"
+                    android:text="@string/cero"
+                    android:textSize="70sp"
+                    android:textStyle="bold"
+                    android:id="@+id/b0"
+                   android:onClick="OnNumberIsClicked"/>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/lime"
+                    android:textColor="@color/maroon"
+                    android:text="@string/igual"
+                    android:textSize="70sp"
+                    android:textStyle="bold"
+                    android:id="@+id/bIgual"
+                    android:onClick="OnIgualIsClicked"/>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/lime"
+                    android:textColor="@color/maroon"
+                    android:text="@string/div"
+                    android:textSize="70sp"
+                    android:textStyle="bold"
+                    android:id="@+id/bDiv"
+                    android:onClick="OnOperatorIsClicked"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/lime"
+                    android:layout_margin="5dp"
+                    android:text="@string/c"
+                    android:textSize="70sp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textColor="@color/maroon"
+                    android:onClick="OnClearClicked"
+                    android:id="@+id/bClear"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
